@@ -86,6 +86,12 @@ resource "aws_instance" "master_instance" {
   associate_public_ip_address = true
   key_name      = "test_delete"
   
+  user_data     = <<-EOF
+  #!/bin/bash
+  sudo yum update -y
+  sudo amazon-linux-extras install ansible2 -y
+  EOF
+  
   tags = {
     Name = "master_instance"
   }
