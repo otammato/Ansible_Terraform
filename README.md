@@ -5,7 +5,7 @@
 1. The Terraform template creates the infrastructure presented on picture and installs ansible on the master server.
 <br><br>
 2. The ansible playbooks deploy:
-- a site on the three slave servers
+- A static site on the three slave servers
 - Docker on the three slave servers
 
 
