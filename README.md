@@ -47,3 +47,5 @@ private_key_file = ~/.ssh/id_rsa
 
 13. run the ansible playbook
     ansible-playbook deploy-techmax.yml
+
+14
