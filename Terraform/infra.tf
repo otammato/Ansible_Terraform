@@ -169,9 +169,11 @@ output "ansible_3_private_ip" {
 
 
 resource "local_file" "slaves_ip" {
-    content  = aws_instance.master_instance.public_ip
-    content  = aws_instance.ansible_1.private_ip
-    content  = aws_instance.ansible_2.private_ip
-    content  = aws_instance.ansible_3.private_ip
+    content = format("%s\n%s\n%s\n%s",
+  aws_instance.master_instance.public_ip,
+  aws_instance.ansible_1.private_ip,
+  aws_instance.ansible_2.private_ip,
+  aws_instance.ansible_3.private_ip
+)
     filename = "inventory.txt"
 }
