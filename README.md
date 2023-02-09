@@ -17,6 +17,10 @@ In this demo:
 
 <br><br>
 
+
+### 1. 
+
+
 1. create the ansible machine sg
     - ssh from ip
 
