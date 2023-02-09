@@ -156,21 +156,20 @@ output "master_instance_public_ip" {
 }
 
 output "ansible_1_private_ip" {
-    value = aws_instance.ansible_1.private_ip
+    value = aws_instance.ansible_1.public_ip
   }
 
 output "ansible_2_private_ip" {
-    value = aws_instance.ansible_2.private_ip
+    value = aws_instance.ansible_2.public_ip
   }
 
 output "ansible_3_private_ip" {
-    value = aws_instance.ansible_3.private_ip
+    value = aws_instance.ansible_3.public_ip
   }
 
 
 resource "local_file" "slaves_ip" {
-    content = format("%s\n%s\n%s\n%s",
-  aws_instance.master_instance.public_ip,
+    content = format("%s\n%s\n%s",
   aws_instance.ansible_1.private_ip,
   aws_instance.ansible_2.private_ip,
   aws_instance.ansible_3.private_ip
