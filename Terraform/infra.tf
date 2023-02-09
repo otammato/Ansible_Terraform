@@ -44,9 +44,29 @@ resource "aws_subnet" "private_subnet" {
 }
 
 
-resource "aws_security_group" "ec2_security_group" {
-  name        = "test-ec2-security-group"
+resource "aws_security_group" "ec2_master_security_group" {
+  name        = "ec2-master-security-group"
   description = "Allow ssh access"
+  vpc_id      = aws_default_vpc.default.id
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_security_group" "ec2_security_group" {
+  name        = "ec2-slave-security-group"
+  description = "Allow ssh and http access"
   vpc_id      = aws_default_vpc.default.id
 
   ingress {
