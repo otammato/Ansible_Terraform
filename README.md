@@ -64,6 +64,8 @@ vi inventory
 touch install_site_playbook.yml 
 vi install_site_playbook.yml
 ```
+
+<br><br>
 ### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh
 <br><br>
 
