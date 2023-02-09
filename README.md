@@ -64,8 +64,10 @@ vi inventory
 touch install_site_playbook.yml 
 vi install_site_playbook.yml
 ```
+### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh
 
-### 6. Create ansible.cfg file and specify the location of your rsa key
+
+### 7. Create ansible.cfg file and specify the location of your rsa key
 <br>
 
 ```
@@ -76,7 +78,7 @@ private_key_file = ~/.ssh/id_rsa
 ```
 
 
-### 7. Run the ansible playbook "install_site_playbook.yml"
+### 8. Run the ansible playbook "install_site_playbook.yml"
 
 ```
 ansible-playbook install_site_playbook.yml
