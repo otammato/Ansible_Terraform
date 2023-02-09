@@ -42,12 +42,30 @@ $ terraform apply
 172.31.99.103
 172.31.99.104
 ```
-### 2. Use rsync to copy the file "inventory" needed to Ansible from local machine to master<br>
+### 3. Use rsync to copy the file "inventory" needed to Ansible from local machine to master<br>
 <br>
 
 ```
 rsync -a ~/Terraform/inventory username@remote_host:destination_directory
 ```
+
+### 4. Alternatively, SSH to your master instance, create "inventory" file, paste output IPs and save the file
+<br>
+```
+touch inventory
+vi inventory
+```
+
+### 5. Create playbook, paste the scenario from here: https://github.com/otammato/Ansible_Terraform/blob/main/Ansible/install_site_playbook.yml
+<br>
+```
+touch site_deploy.yml 
+vi site_deploy.yml
+```
+
+
+
+
 
 1. create the ansible machine sg
     - ssh from ip
