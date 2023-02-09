@@ -76,6 +76,11 @@ private_key_file = ~/.ssh/id_rsa
 ```
 
 
+### 7. Run the ansible playbook install_site_playbook.yml
+
+```
+ansible-playbook install_site_playbook.yml
+```
 
 
 
