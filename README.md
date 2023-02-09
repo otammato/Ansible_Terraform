@@ -18,8 +18,10 @@ In this demo:
 <br><br>
 
 
-### 1. Launch a Terraform template from here:
-
+### 1. Launch a Terraform template from here:<br>
+https://github.com/otammato/Ansible_Terraform/tree/main/Terraform
+<br>
+Make sure you replace the  key_name parameter to yours
 
 1. create the ansible machine sg
     - ssh from ip
