@@ -69,6 +69,10 @@ vi site_deploy.yml
 
 
 
+
+
+
+
 1. create the ansible machine sg
     - ssh from ip
 
