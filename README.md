@@ -76,7 +76,7 @@ vi install_site_playbook.yml
 [defaults]
 remote_user = ec2-user 
 inventory = inventory 
-private_key_file = ~/.ssh/id_rsa
+private_key_file = ~/.ssh/test_delete
 ```
 
 
