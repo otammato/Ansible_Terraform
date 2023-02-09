@@ -69,7 +69,16 @@ vi install_site_playbook.yml
 ### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh
 <br><br>
 
-### 7. Create ansible.cfg file and specify the location of your rsa key
+
+### 7. Ping your slave EC2 instances from a master EC2:
+<br>
+
+```
+ansible all --key-file ~/.ssh/test_delete -i inventory -m ping -u ec2-user
+```
+
+
+### 8. Create ansible.cfg file and specify the location of your rsa key
 <br>
 
 ```
