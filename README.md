@@ -42,7 +42,7 @@ $ terraform apply
 172.31.99.103
 172.31.99.104
 ```
-### 2. Use rsync to copy  <br>
+### 2. Use rsync to copy the file "inventory" needed to Ansible from local machine to master<br>
 <br>
 
 ```
