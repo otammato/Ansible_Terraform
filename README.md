@@ -38,16 +38,15 @@ $ terraform apply
 <br>
 
 ```
-$ terraform init
-$ terraform validate
-$ terrraform plan
-$ terraform apply
+172.31.98.102
+172.31.99.103
+172.31.99.104
 ```
-### 2. Note the outputs after the infrastructure created - ip addresses of slaves - they are saved to "inventory" file similar to this: <br>
+### 2. Use rsync to copy  <br>
 <br>
 
 ```
-rsync -a ~/dir1 username@remote_host:destination_directory
+rsync -a ~/Terraform/inventory username@remote_host:destination_directory
 ```
 
 1. create the ansible machine sg
