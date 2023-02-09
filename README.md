@@ -22,6 +22,12 @@ In this demo:
 https://github.com/otammato/Ansible_Terraform/tree/main/Terraform
 <br>
 Make sure you replace the  key_name parameter to yours
+<br>
+
+### 2. Note the outputs after the infrastructure created - ip addresses of slaves <br>
+
+
+
 
 1. create the ansible machine sg
     - ssh from ip
