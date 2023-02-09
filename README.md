@@ -18,7 +18,7 @@ In this demo:
 <br><br>
 
 
-### 1. 
+### 1. Launch a Terraform template from here:
 
 
 1. create the ansible machine sg
