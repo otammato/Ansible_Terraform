@@ -28,7 +28,7 @@ resource "aws_subnet" "public_subnet" {
   availability_zone = data.aws_availability_zones.available.names[0]
 
   tags = {
-    Name = "test-public-subnet"
+    Name = "ansible-public-subnet"
   }
 }
 
@@ -39,7 +39,7 @@ resource "aws_subnet" "private_subnet" {
   availability_zone = data.aws_availability_zones.available.names[1]
 
   tags = {
-    Name     = "test-private-subnet"
+    Name     = "ansible-private-subnet"
   }
 }
 
@@ -95,8 +95,8 @@ resource "aws_security_group" "ec2_security_group" {
 resource "aws_instance" "master_instance" {
   ami           = data.aws_ssm_parameter.current-ami.value
   instance_type = "t2.micro"
-  subnet_id     = aws_subnet.public_subnet.id
-  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+  subnet_id     = aws_subnet.private_subnet.id
+  vpc_security_group_ids = [aws_security_group.ec2_master_security_group.id]
   associate_public_ip_address = true
   key_name      = "test_delete"
   
@@ -114,7 +114,7 @@ resource "aws_instance" "master_instance" {
 resource "aws_instance" "ansible_1" {
     ami           = data.aws_ssm_parameter.current-ami.value
     instance_type = "t2.micro"
-    subnet_id     = aws_subnet.private_subnet.id
+    subnet_id     = aws_subnet.public_subnet.id
     vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
     associate_public_ip_address = true
     key_name      = "test_delete"
