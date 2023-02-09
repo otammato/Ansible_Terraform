@@ -43,8 +43,12 @@ $ terraform validate
 $ terrraform plan
 $ terraform apply
 ```
+### 2. Note the outputs after the infrastructure created - ip addresses of slaves - they are saved to "inventory" file similar to this: <br>
+<br>
 
-
+```
+rsync -a ~/dir1 username@remote_host:destination_directory
+```
 
 1. create the ansible machine sg
     - ssh from ip
