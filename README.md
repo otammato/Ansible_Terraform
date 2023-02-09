@@ -28,6 +28,7 @@ https://github.com/otammato/Ansible_Terraform/tree/main/Terraform
 Make sure you replace the key_name parameter in the template to yours, navigate to the Terraform folder, and then
 <br>
 ```
+$ terraform init
 $ terraform validate
 $ terrraform plan
 $ terraform apply
