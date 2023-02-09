@@ -36,6 +36,7 @@ $ terraform apply
 
 ### 2. Note the outputs after the infrastructure created - ip addresses of slaves - they are saved to "inventory" file similar to this: <br>
 <br>
+
 ```
 $ terraform init
 $ terraform validate
