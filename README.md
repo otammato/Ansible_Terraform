@@ -21,12 +21,12 @@ In this demo:
 ### 1. Launch a Terraform template from here:<br>
 https://github.com/otammato/Ansible_Terraform/tree/main/Terraform
 <br><br>
-Make sure you replace the key_name parameter in the template to yours, navigate to the Terraform folder
+Make sure you replace the key_name parameter in the template to yours, navigate to the Terraform folder, and then
 <br>
 ```
-terraform validate
-terrraform plan
-terraform apply
+$ terraform validate
+$ terrraform plan
+$ terraform apply
 ```
 
 ### 2. Note the outputs after the infrastructure created - ip addresses of slaves <br>
