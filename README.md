@@ -57,7 +57,7 @@ touch inventory
 vi inventory
 ```
 
-### 5. Create a playbook, paste the scenario from here: https://github.com/otammato/Ansible_Terraform/blob/main/Ansible/install_site_playbook.yml
+### 5. When you SSH connected to your Master Instance, create a playbook, paste the scenario from here: https://github.com/otammato/Ansible_Terraform/blob/main/Ansible/install_site_playbook.yml
 <br>
 
 ```
