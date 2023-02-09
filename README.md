@@ -117,7 +117,7 @@ private_key_file = ~/.ssh/id_rsa
 
 11. ansible all --key-file ~/.ssh/id_rsa -i inventory -m ping -u ec2-user
 
-12. create ansible.cfg file 
+12. create an ansible.cfg file 
 [defaults]
 remote_user = ec2-user 
 inventory = inventory 
