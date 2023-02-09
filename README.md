@@ -65,6 +65,17 @@ touch install_site_playbook.yml
 vi install_site_playbook.yml
 ```
 
+### 6. Create ansible.cfg file and specify the location of your rsa key
+<br>
+
+```
+[defaults]
+remote_user = ec2-user 
+inventory = inventory 
+private_key_file = ~/.ssh/id_rsa
+```
+
+
 
 
 
