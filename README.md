@@ -8,7 +8,7 @@ In this demo:
 
 <br><br>
 Technologies:
-<br><br>
+<br>
 1. Terraform
 2. Ansible
 
