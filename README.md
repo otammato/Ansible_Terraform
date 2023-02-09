@@ -3,8 +3,10 @@
 
 In this demo:
 <br>
+
 1. We will utilize Terraform to deploy a template that sets up a virtual private cloud (VPC) with two subnets: a public subnet and a private subnet. The private subnet will host a single "master" server with Ansible already installed, while the public subnet will host three "slave" servers. Additionally, two security groups will be established to provide secure access, with SSH access granted to the master and both SSH and HTTP access granted to the slaves for hosting a simple website. The Terraform template will also provide the public IP addresses of the slave servers as outputs and save them in the "inventory" file. 
 <br>
+
 3. Finally, we will use Ansible to automate the deployment of the website on the three slave servers, utilizing a playbook and an inventory file.
 
 
