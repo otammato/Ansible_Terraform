@@ -61,8 +61,8 @@ vi inventory
 <br>
 
 ```
-touch site_deploy.yml 
-vi site_deploy.yml
+touch install_site_playbook.yml 
+vi install_site_playbook.yml
 ```
 
 
