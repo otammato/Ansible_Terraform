@@ -51,6 +51,7 @@ rsync -a ~/Terraform/inventory username@remote_host:destination_directory
 
 ### 4. Alternatively, SSH to your master instance, create "inventory" file, paste output IPs and save the file
 <br>
+
 ```
 touch inventory
 vi inventory
