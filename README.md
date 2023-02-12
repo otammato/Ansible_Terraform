@@ -134,7 +134,7 @@ ansible-playbook install_site_playbook.yml
 
 
 <br><br>
-some more info you might need if you decide not to use terraform or AWS Cloud9 ide:
+some more info you might need if you decide not to use Terraform or AWS Cloud9 IDE:
 
 ```
 1. create key pairs on the ansible-machine 
