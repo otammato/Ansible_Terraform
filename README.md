@@ -88,7 +88,7 @@ chmod 400 ~/.ssh/test_delete.pem
 <br>
 
 ```
-ansible all --key-file ~/.ssh/test_delete -i inventory -m ping -u ec2-user
+ansible all --key-file ~/.ssh/test_delete.pem -i inventory -m ping -u ec2-user
 ```
 
 <br><br>
@@ -105,7 +105,7 @@ ansible all --key-file ~/.ssh/test_delete -i inventory -m ping -u ec2-user
 [defaults]
 remote_user = ec2-user 
 inventory = inventory 
-private_key_file = ~/.ssh/test_delete
+private_key_file = ~/.ssh/test_delete.pem
 ```
 
 
