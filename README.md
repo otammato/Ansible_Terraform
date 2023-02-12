@@ -134,7 +134,6 @@ ansible-playbook install_site_playbook.yml
 
 
 ### 11. Clean up
-<br><br>
 
 ```
 exit #to exit from your master EC2 instance
