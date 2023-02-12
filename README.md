@@ -119,7 +119,7 @@ ansible-playbook install_site_playbook.yml
 
 <br><br>
 <p align="center" >
-  <img width="938" alt="Screenshot 2023-02-12 at 16 43 12" src="https://user-images.githubusercontent.com/104728608/218324429-d9b3dce7-1d57-42a0-a764-563f9a9bc1a8.png">
+  <img width="700" alt="Screenshot 2023-02-12 at 16 43 12" src="https://user-images.githubusercontent.com/104728608/218324429-d9b3dce7-1d57-42a0-a764-563f9a9bc1a8.png">
 </p>
 <br><br>
 
