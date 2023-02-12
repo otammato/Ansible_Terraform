@@ -19,9 +19,10 @@ The private subnet will host a single "master" server with Ansible already insta
 
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 16 18 20" src="https://user-images.githubusercontent.com/104728608/218334628-96d797a7-c77e-47b4-901e-8332bfd31a03.png">
+  <img width="765" alt="Screenshot 2023-02-12 at 20 13 42" src="https://user-images.githubusercontent.com/104728608/218334773-842bf460-1675-4d09-bf94-c507975f49e0.png">
 </p>
 <br><br>
+
 
 
 ### 0. Start your IDE
