@@ -143,7 +143,7 @@ some more info you might need if you decide not to use Terraform or AWS Cloud9 I
 2. import public key into the ec2 console
     aws ec2 import-key-pair --key-name "test_delete" --public-key-material fileb://~/.ssh/test_delete.pem
 
-3. install ansible on ansible-machine
+3. install ansible on a master machine
     sudo yum update -y
     sudo amazon-linux-extras install ansible2 -y
 ```
