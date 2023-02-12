@@ -96,7 +96,7 @@ ansible all --key-file ~/.ssh/test_delete.pem -i inventory -m ping -u ec2-user
 
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 15 42 32" src="https://user-images.githubusercontent.com/104728608/218321078-8b124ae4-4337-406c-afb0-903a63aa4a70.png">
+  <img width="700" alt="Screenshot 2023-02-12 at 16 40 05" src="https://user-images.githubusercontent.com/104728608/218324285-6a842f39-0aad-46cd-a688-66b8ff7fc7c3.png">
 </p>
 <br><br>
 
@@ -111,7 +111,6 @@ inventory = inventory
 private_key_file = ~/.ssh/test_delete.pem
 ```
 
-
 ### 8. Run the ansible playbook "install_site_playbook.yml"
 
 ```
@@ -120,7 +119,7 @@ ansible-playbook install_site_playbook.yml
 
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 16 40 05" src="https://user-images.githubusercontent.com/104728608/218324285-6a842f39-0aad-46cd-a688-66b8ff7fc7c3.png">
+  <img width="938" alt="Screenshot 2023-02-12 at 16 43 12" src="https://user-images.githubusercontent.com/104728608/218324429-d9b3dce7-1d57-42a0-a764-563f9a9bc1a8.png">
 </p>
 <br><br>
 
