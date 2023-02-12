@@ -136,7 +136,7 @@ ansible-playbook install_site_playbook.yml
 ### 11. Clean up
 
 ```
-exit #to exit from your master EC2 instance
+exit #this is to exit from your master EC2 instance and switch to your local machine or, in my case, to the EC2 where Cloud9 was launched
 terraform destroy
 ```
 
