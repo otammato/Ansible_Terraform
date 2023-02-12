@@ -51,11 +51,13 @@ $ terraform apply
 172.31.99.103
 172.31.99.104
 ```
-### 3. Use rsync to copy the file "inventory" needed to Ansible from local machine to master<br>
+### 3. Create your key file in .ssh folder (just copy the content of RSA key in a file with the same name and .pem type) and use rsync to copy the created by Terraform file "inventory", needed to Ansible later, from a local machine to a master<br>
 <br>
 
 ```
-rsync -a ~/Terraform/inventory username@remote_host:destination_directory
+chmod 400 $HOME/.ssh/test-delete.pem
+
+rsync -Pav -e "ssh -i $HOME/.ssh/test-delete.pem" /home/ec2-user/environment/Terraform ec2-user@ip-172-31-99-203:~ 
 ```
 
 ### 4. Alternatively, SSH to your master instance, create "inventory" file, paste output IPs and save the file
