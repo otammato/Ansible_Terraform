@@ -55,9 +55,9 @@ $ terraform apply -auto-approve
 <br>
 
 ```
-172.31.98.102
-172.31.99.103
-172.31.99.104
+172.31.98.201
+172.31.99.231
+172.31.99.138
 ```
 ### 3. Create your key file in .ssh folder (just copy the content of RSA key in a file with the same name and .pem type) and use rsync to copy the created by Terraform file "inventory", from a local machine to a remote master<br>
 <br>
