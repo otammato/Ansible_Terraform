@@ -86,7 +86,7 @@ wget https://raw.githubusercontent.com/otammato/Ansible_Terraform/main/Ansible/i
 ```
 
 <br><br>
-### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh, also assign this rights:
+### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh, also assign these rights:
 <br><br>
 
 ```
