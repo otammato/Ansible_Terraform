@@ -16,9 +16,10 @@ The private subnet will host a single "master" server with Ansible already insta
 1. Terraform<br>
 2. Ansible
 
+
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 16 18 20" src="https://user-images.githubusercontent.com/104728608/217630228-d582ae23-1690-44cf-8a6e-5a6c2155c341.png">
+  <img width="700" alt="Screenshot 2023-02-12 at 16 18 20" src="https://user-images.githubusercontent.com/104728608/218334513-99c0f970-d651-48bb-b694-0b79ae725c4f.png">
 </p>
 <br><br>
 
