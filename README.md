@@ -60,7 +60,7 @@ $ terraform apply
 ```
 chmod 400 $HOME/.ssh/test_delete.pem
 
-rsync -Pav -e "ssh -i $HOME/.ssh/test_delete.pem" /home/ec2-user/environment/Terraform ec2-user@ip-172-31-99-203:~ 
+rsync -Pav -e "ssh -i $HOME/.ssh/test_delete.pem" /home/ec2-user/environment/Terraform ec2-user@ip-172-31-99-203:/home/ec2-user
 ```
 
 ### 4. Alternatively, SSH to your master instance, create an "inventory" file, paste the Terraform output of slaves' IPs and save the file
