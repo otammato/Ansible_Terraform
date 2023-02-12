@@ -31,7 +31,7 @@ Download:
 <br>
 ```
 mkdir Terraform && cd Terraform/
-wget https://github.com/otammato/Ansible_Terraform/blob/main/Terraform/infra.tf
+wget https://raw.githubusercontent.com/otammato/Ansible_Terraform/main/Terraform/infra.tf
 ```
 
 Make sure you replace the key_name parameter in the template to yours, navigate to the Terraform folder, and then launch a Terraform template
