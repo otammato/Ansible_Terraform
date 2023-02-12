@@ -53,7 +53,7 @@ resource "aws_security_group" "ec2_master_security_group" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] # change this to your ip for the security reasons
   }
   
   egress {
@@ -73,7 +73,7 @@ resource "aws_security_group" "ec2_security_group" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] # change this to your ip for the security reasons
   }
 
   ingress {
