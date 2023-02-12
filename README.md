@@ -30,6 +30,7 @@ https://github.com/otammato/Ansible_Terraform/tree/main/Terraform
 Download:
 <br>
 ```
+mkdir Terraform && cd Terraform/
 wget https://github.com/otammato/Ansible_Terraform/blob/main/Terraform/infra.tf
 ```
 
