@@ -115,53 +115,29 @@ private_key_file = ~/.ssh/test_delete.pem
 ansible-playbook install_site_playbook.yml
 ```
 
+<br><br>
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-12 at 15 59 09" src="https://user-images.githubusercontent.com/104728608/218321928-9942497e-651a-4b08-af26-e312fa587b50.png">
+</p>
+<br><br>
 
 
 
 
 
 
+<br><br>
+some more info you might need if you decide not to use terraform or AWS Cloud9 ide:
 
-1. create the ansible machine sg
-    - ssh from ip
-
-2. create the server sg 
-    ssh from ansible sg
-    http from port 80
-
-3. launch the ansible-machine 
-    amazon linux 2
-
-4. create key pairs on the ansible-machine 
+```
+1. create key pairs on the ansible-machine 
     ssh-keygen -t rsa -b 2048
 
-5. import public key into the ec2 console
+2. import public key into the ec2 console
     ansible-pub-key
 
-6. launch the servers
-    key pair: ansible-pub-key
-    sg: server-sg 
-
-7. test connection 
-    ssh private ip
-
-8. install ansible on ansible-machine
+3. install ansible on ansible-machine
     sudo yum update -y
     sudo amazon-linux-extras install ansible2 -y
+```
 
-9. create inventory file
-
-10. create playbook
-
-11. ansible all --key-file ~/.ssh/id_rsa -i inventory -m ping -u ec2-user
-
-12. create an ansible.cfg file 
-[defaults]
-remote_user = ec2-user 
-inventory = inventory 
-private_key_file = ~/.ssh/id_rsa
-
-13. run the ansible playbook
-    ansible-playbook deploy-techmax.yml
-
-14
