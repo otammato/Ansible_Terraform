@@ -63,7 +63,7 @@ chmod 400 $HOME/.ssh/test_delete.pem
 rsync -Pav -e "ssh -i $HOME/.ssh/test_delete.pem" /home/ec2-user/environment/Terraform ec2-user@ip-172-31-99-203:~ 
 ```
 
-### 4. Alternatively, SSH to your master instance, create "inventory" file, paste the Terraform output for slaves' IPs and save the file
+### 4. Alternatively, SSH to your master instance, create an "inventory" file, paste the Terraform output of slaves' IPs and save the file
 <br>
 
 ```
@@ -124,7 +124,7 @@ ansible-playbook install_site_playbook.yml
 </p>
 <br><br>
 
-### 9. Test the website was sucessfully launched using public IPs of slave instances: 
+### 9. Test the website was sucessfully launched by using public IPs of slave instances: 
 
 <br><br>
 <p align="center" >
