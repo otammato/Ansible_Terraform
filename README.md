@@ -54,7 +54,7 @@ $ terraform apply
 172.31.99.103
 172.31.99.104
 ```
-### 3. Create your key file in .ssh folder (just copy the content of RSA key in a file with the same name and .pem type) and use rsync to copy the created by Terraform file "inventory", needed to Ansible later, from a local machine to a remote master<br>
+### 3. Create your key file in .ssh folder (just copy the content of RSA key in a file with the same name and .pem type) and use rsync to copy the created by Terraform file "inventory", from a local machine to a remote master<br>
 <br>
 
 ```
