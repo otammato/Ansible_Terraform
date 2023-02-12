@@ -137,7 +137,7 @@ ansible-playbook install_site_playbook.yml
 some more info you might need if you decide not to use Terraform or AWS Cloud9 IDE:
 
 ```
-1. create key pairs on the ansible-machine 
+1. create key pairs on a master machine 
     ssh-keygen -t rsa -b 2048
 
 2. import public key into the ec2 console
