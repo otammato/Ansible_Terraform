@@ -120,9 +120,10 @@ ansible-playbook install_site_playbook.yml
 
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 15 59 09" src="https://user-images.githubusercontent.com/104728608/218321928-9942497e-651a-4b08-af26-e312fa587b50.png">
+  <img width="700" alt="Screenshot 2023-02-12 at 16 40 05" src="https://user-images.githubusercontent.com/104728608/218324285-6a842f39-0aad-46cd-a688-66b8ff7fc7c3.png">
 </p>
 <br><br>
+
 
 ### 9. Test the website was sucessfully launched by using public IPs of slave instances: 
 
