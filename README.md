@@ -108,7 +108,7 @@ ansible all --key-file ~/.ssh/test_delete.pem -i inventory -m ping -u ec2-user
 <br><br>
 
 
-### 8. Create ansible.cfg file and specify the location of your rsa key
+### 8. Create an ansible.cfg file and specify the location of your rsa key
 <br>
 
 ```
