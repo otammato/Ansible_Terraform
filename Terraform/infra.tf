@@ -111,68 +111,38 @@ resource "aws_instance" "master_instance" {
   }
 }
 
-resource "aws_instance" "ansible_1" {
-    ami           = data.aws_ssm_parameter.current-ami.value
-    instance_type = "t2.micro"
-    subnet_id     = aws_subnet.public_subnet.id
-    vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
-    associate_public_ip_address = true
-    key_name      = "test_delete"
-    
-    tags = {
-      Name = "ansible-1_instance"
-    }
-  }
+resource "aws_instance" "ansible_slave" {
+  count = 3
+  ami           = data.aws_ssm_parameter.current-ami.value
+  instance_type = "t2.micro"
+  subnet_id     = aws_subnet.public_subnet.id
+  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+  associate_public_ip_address = true
+  key_name      = "test_delete"
 
-resource "aws_instance" "ansible_2" {
-    ami           = data.aws_ssm_parameter.current-ami.value
-    instance_type = "t2.micro"
-    subnet_id     = aws_subnet.private_subnet.id
-    vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
-    associate_public_ip_address = true
-    key_name      = "test_delete"
-    
-    tags = {
-      Name = "ansible-2_instance"
-    }
+  tags = {
+    Name = "slave_instance${count.index + 1}"
   }
+}
 
-resource "aws_instance" "ansible_3" {
-    ami           = data.aws_ssm_parameter.current-ami.value
-    instance_type = "t2.micro"
-    subnet_id     = aws_subnet.private_subnet.id
-    vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
-    associate_public_ip_address = true
-    key_name      = "test_delete"
-    
-    tags = {
-      Name = "ansible-3_instance"
-    }
-  }
+resource "local_file" "slaves_ips" {
+    content = format("%s\n%s\n%s",
+  aws_instance.ansible_slave.*.private_ip[0],
+  aws_instance.ansible_slave.*.private_ip[1],
+  aws_instance.ansible_slave.*.private_ip[2]
+)
+
+    filename = "inventory"
+}
 
 
 output "master_instance_public_ip" {
   value = aws_instance.master_instance.public_ip
 }
 
-output "ansible_1_private_ip" {
-    value = aws_instance.ansible_1.public_ip
-  }
-
-output "ansible_2_private_ip" {
-    value = aws_instance.ansible_2.public_ip
-  }
-
-output "ansible_3_private_ip" {
-    value = aws_instance.ansible_3.public_ip
-  }
-
-
-resource "local_file" "slaves_ip" {
-    content = format("%s\n%s\n%s",
-  aws_instance.ansible_1.private_ip,
-  aws_instance.ansible_2.private_ip,
-  aws_instance.ansible_3.private_ip
-)
-    filename = "inventory"
+output "slaves_ips" {
+  value = ["${aws_instance.ansible_slave.*.private_ip}"]
 }
+
+
+
