@@ -132,7 +132,7 @@ resource "local_file" "slaves_ips" {
   aws_instance.ansible_slave.*.private_ip[2]
 )
 
-    filename = "inventory"
+  filename = "inventory"
 }
 
 
