@@ -47,7 +47,7 @@ $ terraform apply
 ```
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 17 24 29" src="https://user-images.githubusercontent.com/104728608/218326604-1d72eeb2-4b9e-4a53-bcf9-c062e0002e3a.png">
+  <img width="700" alt="Screenshot 2023-02-12 at 17 26 51" src="https://user-images.githubusercontent.com/104728608/218326800-3f8a4005-c9c2-4d16-ad5e-0c68e1e5bacd.png">
 </p>
 <br><br>
 
