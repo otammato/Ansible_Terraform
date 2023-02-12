@@ -141,7 +141,7 @@ some more info you might need if you decide not to use terraform or AWS Cloud9 i
     ssh-keygen -t rsa -b 2048
 
 2. import public key into the ec2 console
-    ansible-pub-key
+    aws ec2 import-key-pair --key-name "test_delete" --public-key-material fileb://~/.ssh/test_delete.pem
 
 3. install ansible on ansible-machine
     sudo yum update -y
