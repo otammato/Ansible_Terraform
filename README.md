@@ -43,7 +43,7 @@ Make sure you replace the key_name parameter in the template with yours, navigat
 $ terraform init
 $ terraform validate
 $ terrraform plan
-$ terraform apply
+$ terraform apply -auto-approve
 ```
 <br><br>
 <p align="center" >
@@ -143,7 +143,7 @@ ansible-playbook install_site_playbook.yml
 ```
 exit #this is to exit from your master EC2 instance and switch to your local machine or, in my case, to the EC2 where Cloud9 was launched
 
-terraform destroy
+terraform destroy -auto-approve
 ```
 <p align="center" >
   <img width="607" alt="Screenshot 2023-02-12 at 17 12 46" src="https://user-images.githubusercontent.com/104728608/218325985-a551cd71-94cb-4d6a-aed8-ddb4b42ab580.png">
