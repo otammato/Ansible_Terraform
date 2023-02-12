@@ -47,7 +47,7 @@ $ terraform apply -auto-approve
 ```
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-12 at 17 26 51" src="https://user-images.githubusercontent.com/104728608/218326800-3f8a4005-c9c2-4d16-ad5e-0c68e1e5bacd.png">
+  <img width="700" alt="Screenshot 2023-02-12 at 17 36 59" src="https://user-images.githubusercontent.com/104728608/218327408-e9ca510c-8269-462e-b3a1-5b1a59682028.png">
 </p>
 <br><br>
 
