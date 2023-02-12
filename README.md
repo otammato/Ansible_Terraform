@@ -141,6 +141,11 @@ exit #this is to exit from your master EC2 instance and switch to your local mac
 terraform destroy
 ```
 
+<br><br>
+<p align="center" >
+  <img width="607" alt="Screenshot 2023-02-12 at 17 12 46" src="https://user-images.githubusercontent.com/104728608/218325985-a551cd71-94cb-4d6a-aed8-ddb4b42ab580.png">
+</p>
+<br><br>
 
 <br><br>
 some more info you might need if you decide not to use Terraform or AWS Cloud9 IDE:
