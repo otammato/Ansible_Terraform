@@ -23,13 +23,14 @@ The private subnet will host a single "master" server with Ansible already insta
 <br><br>
 
 
-### 1. Download a Terraform template from here:<br>
+### 1. Download and launch a Terraform template from here:<br>
 https://github.com/otammato/Ansible_Terraform/tree/main/Terraform
 <br>
 
+Download:
+<br>
 ```
 wget https://github.com/otammato/Ansible_Terraform/blob/main/Terraform/infra.tf
-
 ```
 
 Make sure you replace the key_name parameter in the template to yours, navigate to the Terraform folder, and then launch a Terraform template
