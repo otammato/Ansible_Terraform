@@ -34,7 +34,7 @@ mkdir Terraform && cd Terraform/
 wget https://raw.githubusercontent.com/otammato/Ansible_Terraform/main/Terraform/infra.tf
 ```
 
-Make sure you replace the key_name parameter in the template to yours, navigate to the Terraform folder, and then launch a Terraform template
+Make sure you replace the key_name parameter in the template with yours, navigate to the Terraform folder, and then launch a Terraform template
 <br>
 ```
 $ terraform init
