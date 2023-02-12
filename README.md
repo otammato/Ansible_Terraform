@@ -125,7 +125,7 @@ ansible-playbook install_site_playbook.yml
 <br><br>
 
 
-### 9. Test the website was sucessfully launched by using public IPs of slave instances: 
+### 9. Test the website was sucessfully launched by using public IPs of the slave instances: 
 
 <br><br>
 <p align="center" >
