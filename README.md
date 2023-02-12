@@ -60,7 +60,7 @@ chmod 400 $HOME/.ssh/test_delete.pem
 rsync -Pav -e "ssh -i $HOME/.ssh/test_delete.pem" /home/ec2-user/environment/Terraform ec2-user@ip-172-31-99-203:~ 
 ```
 
-### 4. Alternatively, SSH to your master instance, create "inventory" file, paste output slaves' IPs and save the file
+### 4. Alternatively, SSH to your master instance, create "inventory" file, paste the Terraform output for slaves' IPs and save the file
 <br>
 
 ```
