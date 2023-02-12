@@ -45,6 +45,11 @@ $ terraform validate
 $ terrraform plan
 $ terraform apply
 ```
+<br><br>
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-12 at 17 24 29" src="https://user-images.githubusercontent.com/104728608/218326604-1d72eeb2-4b9e-4a53-bcf9-c062e0002e3a.png">
+</p>
+<br><br>
 
 ### 2. Note the outputs after the infrastructure created - private ip addresses of slaves - they are also automatically saved to an "inventory" file similar to this: <br>
 <br>
