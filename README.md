@@ -111,7 +111,7 @@ inventory = inventory
 private_key_file = ~/.ssh/test_delete.pem
 ```
 
-### 8. Run the ansible playbook "install_site_playbook.yml"
+### 9. Run the ansible playbook "install_site_playbook.yml"
 
 ```
 ansible-playbook install_site_playbook.yml
@@ -124,7 +124,7 @@ ansible-playbook install_site_playbook.yml
 <br><br>
 
 
-### 9. Test the website was sucessfully launched by using public IPs of the slave instances: 
+### 10. Test the website was sucessfully launched by using public IPs of the slave instances: 
 
 <br><br>
 <p align="center" >
