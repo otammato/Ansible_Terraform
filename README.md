@@ -76,8 +76,12 @@ wget https://raw.githubusercontent.com/otammato/Ansible_Terraform/main/Ansible/i
 ```
 
 <br><br>
-### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh
+### 6. Copy your public key (in my case it is test_delete.pem) to the master server and place it in home/ec2-user/.ssh, also assign this rights:
 <br><br>
+
+```
+chmod 400 ~/.ssh/test_delete.pem 
+```
 
 
 ### 7. Ping your slave EC2 instances from a master EC2:
@@ -86,6 +90,12 @@ wget https://raw.githubusercontent.com/otammato/Ansible_Terraform/main/Ansible/i
 ```
 ansible all --key-file ~/.ssh/test_delete -i inventory -m ping -u ec2-user
 ```
+
+<br><br>
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-12 at 15 42 32" src="https://user-images.githubusercontent.com/104728608/218321078-8b124ae4-4337-406c-afb0-903a63aa4a70.png">
+</p>
+<br><br>
 
 
 ### 8. Create ansible.cfg file and specify the location of your rsa key
