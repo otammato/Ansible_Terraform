@@ -133,6 +133,15 @@ ansible-playbook install_site_playbook.yml
 <br><br>
 
 
+### 11. Clean up
+<br><br>
+
+```
+exit #to exit from your master EC2 instance
+terraform destroy
+```
+
+
 <br><br>
 some more info you might need if you decide not to use Terraform or AWS Cloud9 IDE:
 
