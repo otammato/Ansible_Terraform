@@ -107,8 +107,13 @@ ansible all --key-file ~/.ssh/test_delete.pem -i inventory -m ping -u ec2-user
 </p>
 <br><br>
 
+### 8. Get info about OS of your slaves' EC2 instances:
 
-### 8. Create an ansible.cfg file and specify the location of your rsa key
+```
+ansible linux -a "cat etc/os-release"
+```
+
+### 9. Create an ansible.cfg file and specify the location of your rsa key
 <br>
 
 ```
@@ -118,7 +123,7 @@ inventory = inventory
 private_key_file = ~/.ssh/test_delete.pem
 ```
 
-### 9. Run the ansible playbook "install_site_playbook.yml"
+### 10. Run the ansible playbook "install_site_playbook.yml"
 
 ```
 ansible-playbook install_site_playbook.yml
@@ -131,7 +136,7 @@ ansible-playbook install_site_playbook.yml
 <br><br>
 
 
-### 10. Test the website was sucessfully launched by using public IPs of the slave instances: 
+### 11. Test the website was sucessfully launched by using public IPs of the slave instances: 
 
 <br><br>
 <p align="center" >
@@ -140,7 +145,7 @@ ansible-playbook install_site_playbook.yml
 <br><br>
 
 
-### 11. Clean up
+### 12. Clean up
 
 ```
 exit #this is to exit from your master EC2 instance and switch to your local machine or, in my case, to the EC2 where Cloud9 was launched
